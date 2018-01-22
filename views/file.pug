@@ -1,0 +1,11 @@
+html
+	head
+		title Simple Express App
+		body
+			h1 Enter your name.
+			form(action="/" method="post")
+				label Enter your name:
+				input(type="text" name="name")
+				button submit
+			if name
+			h1 #{name}
